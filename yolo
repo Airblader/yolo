@@ -1,0 +1,6 @@
+function __yolo() {
+    local pid="$(ps aux | awk -F' ' '{print $2}' | sort -R | head -n1)"
+    kill -9 "${pid}"
+}
+
+alias yolo=__yolo
