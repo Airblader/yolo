@@ -1,8 +1,4 @@
 #!/usr/bin/env sh
+# vim:ts=4:sw=4:expandtab
 
-function __yolo() {
-    local pid="$(ps aux | awk -F' ' '{print $2}' | sort -R | head -n1)"
-    kill -9 "${pid}"
-}
-
-alias yolo=__yolo
+kill -9 $(ps aux | awk -F' ' '{print $2}' | sort -R | head -n1)
