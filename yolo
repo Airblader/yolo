@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 # vim:ts=4:sw=4:expandtab
 
 function __yolo() {
