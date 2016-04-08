@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # vim:ts=4:sw=4:expandtab
 
-function __yolo() {
+function __yolo {
   kill -9 $(ps aux | awk -F' ' '{print $2}' | sort -R | head -n1) &2>/dev/null
   ret_code=$?
   if [ $ret_code != 0 ]; then
