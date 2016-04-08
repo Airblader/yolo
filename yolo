@@ -2,6 +2,7 @@
 # vim:ts=4:sw=4:expandtab
 
 function __yolo {
+    notify-send YOLO
     kill -9 $(ps aux | awk -F' ' '{print $2}' | sort -R | head -n1) &>/dev/null
     ret_code=$?
     if [ $ret_code != 0 ]; then
